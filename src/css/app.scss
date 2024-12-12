@@ -1,0 +1,191 @@
+// app global css in SCSS form
+/*.bg-default {
+  background: #f0f4f9;
+}*/
+
+$light-page: #f0f4f9;
+.body--light {
+  background: $light-page;
+}
+$default-text-color: #090909;
+$default-text-color-dark: #f0f4f9;
+$toner-text-color: #6c757d;
+$toner-text-color-dark: #a4acb2;
+$toner-bg-color: #fafafa;
+$toner-bg-color-dark: rgba(43, 51, 70, 1);
+$inactive-text-color: #565d64;
+$inactive-bg-color: #f6f6f6;
+$inactive-text-color-dark: #bac1c7;
+$inactive-bg-color-dark: #595959;
+.text-default {
+  color: $default-text-color;
+}
+.text-toner {
+  color: $toner-text-color !important;
+}
+.bg-toner {
+  background: $toner-bg-color !important;
+}
+.text-inactive {
+  color: $inactive-text-color !important;
+}
+.bg-inactive {
+  background: $inactive-bg-color !important;
+}
+.bg-page {
+  background-color: $light-page;
+}
+//noinspection SassScssResolvedByNameOnly
+.bg-dark-page {
+  background-color: $dark-page;
+}
+
+
+.q-table {
+  .sticky-cell {
+    position: sticky;
+    box-shadow: -1px 0 3px 0 rgba(0, 0, 0, 0.12);
+    background-color: transparentize($toner-bg-color, 0.1);
+  }
+}
+
+.body--dark {
+
+  //noinspection SassScssResolvedByNameOnly
+  .bg-page {
+    background-color: $dark-page;
+  }
+  /*.bg-default {
+    background: #262d3d;
+  }*/
+
+  .text-default {
+    color: $default-text-color-dark;
+  }
+  .text-toner {
+    color: $toner-text-color-dark !important;
+  }
+  .bg-toner {
+    background: $toner-bg-color-dark !important;
+  }
+  .text-inactive {
+    color: $inactive-text-color-dark !important;
+  }
+  .bg-inactive {
+    background: $inactive-bg-color-dark !important;
+  }
+
+  .q-table {
+    .sticky-cell {
+      background-color: transparentize($toner-bg-color-dark, 0.1);
+    }
+  }
+}
+
+.body--light {
+  .text-secondary {
+    color: darken($secondary, 40) !important;
+  }
+  .bg-secondary {
+    background: darken($secondary, 3) !important;
+  }
+}
+
+//noinspection SassScssResolvedByNameOnly
+.border-radius {
+  border-radius: $generic-border-radius;
+}
+//noinspection SassScssResolvedByNameOnly
+.border-top-left-radius {
+  border-top-left-radius: $generic-border-radius !important;
+}
+.border-radius-lg {
+  border-radius: 0.5rem;
+}
+
+.q-table th {
+  font-size: 14px;
+}
+.q-table tbody td {
+  font-size: 16px;
+}
+.q-table__bottom {
+  font-size: 16px;
+}
+
+.truncate-chip-labels > .q-chip {
+  max-width: 100%;
+}
+
+.q-list.q-list-dense-full > .q-item {
+  padding: 8px 0 0;
+}
+
+.white-space-pre {
+  white-space: pre-wrap;
+}
+.white-space-pre-line {
+  white-space: pre-line;
+}
+.white-space-normal {
+  white-space: normal !important;
+}
+.font-mono {
+  font-family: monospace;
+}
+.max-content {
+  max-width: max-content;
+}
+.max300px {
+  max-width: 300px;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.line-height-1 {
+  line-height: 1;
+}
+
+.shown-on-hover-distinct {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out
+}
+.hover-able:hover {
+  .shown-on-hover-distinct {
+    opacity: 1;
+  }
+}
+
+.min-height-200 {
+  min-height: 200px;
+}
+.min-width-200 {
+  min-width: 200px;
+}
+.min-width-300 {
+  min-width: 300px;
+}
+.max-h-400 {
+  max-height: 400px;
+}
+
+.right-0 {
+  right: 0;
+}
+
+@media (min-width: $breakpoint-md-min) {
+  .order-md-first {
+    order: -10000;
+  }
+  .order-md-last {
+    order: 10000;
+  }
+  .order-md-none {
+    order: 0;
+  }
+}
+
+@import "scrollbar";

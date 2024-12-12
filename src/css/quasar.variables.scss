@@ -1,0 +1,52 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+// https://quasar.dev/style/sass-scss-variables#variables-list
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary: #2979ff;
+$secondary : #e6f2fc;
+$accent: #ee4865;
+
+$dark-page: #262d3d;
+$dark: #323b50;
+
+$positive: #2aad61;
+$negative: #C10015;
+$info: #59c4c8;
+$warning: #ffc951;
+
+/*$shadow-color: #003e68;
+$dark-shadow-color: #FFFFFF;*/
+
+$body-font-size: 16px;
+$input-font-size: 16px;
+$h1: (size: 6rem, line-height: 6rem, letter-spacing: -.01562em, weight: 300) !default;
+$h2: (size: 3.75rem, line-height: 3.75rem, letter-spacing: -.00833em, weight: 300) !default;
+$h3: (size: 3rem, line-height: 3.125rem, letter-spacing: normal, weight: 400) !default;
+$h4: (size: 2.125rem, line-height: 2.5rem, letter-spacing: .00735em, weight: 400) !default;
+$h5: (size: 1.5rem, line-height: 2rem, letter-spacing: normal, weight: 400) !default;
+$h6: (size: 1.25rem, line-height: 2rem, letter-spacing: .0125em, weight: 700) !default;
+/*
+$elevation-umbra      : rgba($shadow-color, .2) !default;
+$elevation-penumbra   : rgba($shadow-color, .14) !default;
+$elevation-ambient    : rgba($shadow-color, .12) !default;
+
+$shadow-0  : 0 0 0 $elevation-umbra, 0 0 0 $elevation-penumbra, 0 0 0 $elevation-ambient !default;
+$shadow-1  : 0 1px 3px $elevation-umbra, 0 1px 1px $elevation-penumbra, 0 2px 1px -1px $elevation-ambient !default;
+$shadow-2  : 0 1px 5px $elevation-umbra, 0 2px 2px $elevation-penumbra, 0 3px 1px -2px $elevation-ambient !default;
+*/
+
+$generic-border-radius: 4px !default;
+$button-font-size: 16px;
+$button-shadow                  : none !default;
+//$button-shadow-active           : $shadow-2 !default;
